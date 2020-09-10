@@ -50,11 +50,11 @@ knitr::include_graphics("images/comment1.png")
 </div>
 <h2>Is it too hard? Or not hard enough? </h2>
 
-The <a href="https://en.wikipedia.org/wiki/Zone_of_proximal_development/" target = "_blank">Zone of Proximal Development</a>, coined by educational psychologist Lev Vygotsky, refers to the sweet spot of instruction between something being too easy and too hard. Think of that moment right before the parent takes their hand off of the back of a child's bike for the first time. In the space between completing a task without the assistance of the teacher or parent or peer, and completing the task independently, is where true learning occurs. 
+The <a href="https://en.wikipedia.org/wiki/Zone_of_proximal_development/" target = "_blank">Zone of Proximal Development</a>, coined by educational psychologist Lev Vygotsky, refers to that sweet spot of instruction between something being too easy and too hard. Think of the moment right before a parent takes their hand off of the back of a child's bike for the first time. In the space between completing a task without the assistance of the teacher or parent or peer, and completing the task independently, true learning occurs. 
 
-Teachers already know this, and place students in targeted, differentiated instruction groups all the time. YouTube teachers, on the other hand, make content for a broad audience. While they often do their best to curate an ordered playlist, or group videos by skill level, the choice is really the student's to monitor their own learning, and find that sweet spot between too hard and too easy.
+Teachers already know this, and place students in targeted, differentiated instruction groups all the time. YouTube teachers, on the other hand, are in the business of making content for a broad audience. While they often do their best to curate an ordered playlists, or group videos by skill level, the choice is really the student's to monitor their own learning, and to find that sweet spot between too hard and too easy.
 
-Teachers know that "this is not in the Zone of my Proximal Development" is not usually what students realistically say when judging their own learning performance. Instead, what we hear is "this is too hard" or "this is too easy". We matched the sentiment of video comments with the popular NLP library, <a href="http://www2.imm.dtu.dk/pubdb/edoc/imm6006.pdf" target = "_blank">AFINN</a>, which assigns words on a -5 to 5 scale, with 4 being the most positive comments, and -4 being the most negative.
+Teachers also know that "this is not in the Zone of my Proximal Development" is not usually what students realistically say when judging their own learning performance. Instead, the realization may sound like "this is too hard" or "this is too easy". So, we matched the sentiment of video comments with the popular NLP library, <a href="http://www2.imm.dtu.dk/pubdb/edoc/imm6006.pdf" target = "_blank">AFINN</a>, which assigns words on a -5 to 5 scale, with 4 being the most positive comments, and -4 being the most negative.
 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -145,11 +145,9 @@ p1
 ```
 Positive comments are more prevalent, and especially clustered around 15 to 25 words. Longer comments, when positive, are more likely to include the word "hard" than shorter, positive comments. Take these two comments, both of which scored 3 for high positivity. The comments that are longer, but more positive and mentioned hard seem to “rationalize” the hardness in some way, hence all of the extra words. In the longer comment, the student is referencing the difficulty, but in the shorter version, they praise the teacher.
 
-More than just having the right content, it is also what the learnger things about themselves. Another psychologist, Albert Bandura, coined the term <a href="https://en.wikipedia.org/wiki/Self-efficacy" target = "_blank">self-efficacy</a>. to refer to a belief in one's abilities. Think of this as the "I think I can". But recent work in ed psych has connected this simple belief to the specific “interpretation of difficulty” within a situation. When we encounter hard things, is that a sign that we are learning, or that we should give up the guitar and choose something else?
+More than just having the right content, it is also what the learner thinks about themselves. Another psychologist, Albert Bandura, coined the term <a href="https://en.wikipedia.org/wiki/Self-efficacy" target = "_blank">self-efficacy</a>. to refer to a belief in one's abilities. Think of this as the "I think I can". But recent work in educational psychology has connected this simple belief to the specific “interpretation of difficulty” within a situation. When we encounter hard things, is that a sign that we are learning, or that we should give up the guitar and choose something else?
 
 Teachers know this, which is why they scaffold learning and take students through the complexity very slowly. But for a student to recognize their own difficulty, and continually push themselves, is a different story.
-
-
 
 <div style="margin-width:900px;">
 
@@ -164,10 +162,9 @@ And that takes us to thinking about the other side of the spectrum, students who
 <div style="margin-bottom:50px;">
 </div>
 
-
 <h2>Today's Lesson</h2>
 
-The graph shows the liklihood of each group expressing words in the group. Those shorter comments towards the left hand side? An inclination of students cursing. Laughter is more prevalent in our high sentiment groups. 
+The graph shows the liklihood of each group expressing words in the group. Those shorter comments towards the left hand side? They have a strong liklihood that the comment contains cursing. Laughter, on the other hand, is more likely to appear in our high sentiment groups. 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(kableExtra)
@@ -208,24 +205,25 @@ knitr::kable(try_factor, booktabs = T, escape = F,caption= "Liklihood of mention
 ```
 
 
-And of course we have our braggers, the "it was too easy, bro" doesn't go unnoticed. Which brings us to the teacher's pet. So, while it may be a while until in class guitar groups resume, for now we can celebrate the online teachers who make this community possible. The love is going on beyond the scenes.
+Which brings us to the teacher's pet. Although virtual, love for the teacher can still be expressed. The liklihood of mentioning Marty's name, is five times that for students in the positive 1 group than the negative 1 group. The small percentage that do mention a teacher's name in a strongly negative sentiment are likely to do so with a curse word.
 
-Skill development is of particular interest here. Notice the low probability of mentioning anything about the pentatonics of scales for students with negative comments. This suggests another learning theory "it's hard to know what you know and what you don't know". Identifying words, or gaps, is important, and a source of frustration for new lerners is simply not having the vocabulray to express what it is you still need to learn.
+Skill development is of particular interest here. Notice the low probability of mentioning anything about the pentatonics of scales for students with negative comments. This suggests another learning theory "it's hard to know what you know and what you don't know". Identifying words, or gaps, is important, and a source of frustration for new learners is simply not having the vocabulary to express what it is you still need to learn.
 
-We are in a new age of learning communities, and forming a “one world schoolhouse”, as Sal Khan put it, the creator of Khan Academy. Indeed, nothing will ever truly replace the brick and mortar classroom, or the work of a human teacher. But in the time in between, understanding the interactions between people in these communities will certainly lead to better learning outcomes in the long run.
+At least for the foreseeable future, online learning communities are here to stay. Of course, nothing will ever truly replace the brick and mortar classroom, or the work of a human teacher. But in the time in between, understanding the interactions between people in these communities will certainly lead to better learning outcomes in the long run.
 
-It's hard to imagine that this trend will not continue. Learning for more than K-12 students has moved online, and it will continue to shift the responsibility of the learner in navigating these online communities.
-
-In his book, <a href="https://books.google.com/books/about/The_One_World_Schoolhouse_Education_Reim.html?id=wEGftEMW1bgC&source=kp_book_description" target = "_blank">"One World Schoolhouse: Education Reimagined"</a>, Sal Khan, creater of the large online community Khan Academy, details the power and innovation that online school communities can have. He writes about this desire of the learner to continue and find more. The school never closes:
-
-<i>“Can you imagine if someone told Einstein, Okay, wrap up this relativity thing, we’re moving on to European history? Or said to Michelangelo, Time’s up for the ceiling, now go paint the walls. Yet versions of this snuffing out of creativity and boundary-stretching thought happen all the time in conventional schools.”</i>
 
 
 ```{r, out.width=600, echo=F, fig.cap= "Google Trend search for 'learn guitar' peaks every year over the holiday season. This March, the search reached and retained its holiday level from a few months before."}
 knitr::include_graphics("images/learn.png")
 ```
 
-Of course, just like a live stream concert will never replace an in person experience, a YouTube lesson will never replace direct instruction. But, there is something to be said for figuring it out on your own, or, rather, alongside a thousand other classmates from around the world.
+
+In his book, <a href="https://books.google.com/books/about/The_One_World_Schoolhouse_Education_Reim.html?id=wEGftEMW1bgC&source=kp_book_description" target = "_blank">"One World Schoolhouse: Education Reimagined"</a>, Sal Khan, creater of the large online community Khan Academy, details the power and innovation that online school communities can have. He writes about this desire of the learner to continue and find more. The school never closes:
+
+<i>“Can you imagine if someone told Einstein, Okay, wrap up this relativity thing, we’re moving on to European history? Or said to Michelangelo, Time’s up for the ceiling, now go paint the walls. Yet versions of this snuffing out of creativity and boundary-stretching thought happen all the time in conventional schools.”</i>
+
+We hope our future Patti Smiths and John Bonhams are taking advantage of this vast instructional content, and monitoring their own learning in the process. Of course, just like a live stream concert will never replace an in person experience, a YouTube lesson will never replace direct instruction. However, there is something to be said for figuring it out on your own, or, rather, alongside a thousand other classmates from around the world.
+
 
 <div style="margin-bottom:50px;">
 </div>
