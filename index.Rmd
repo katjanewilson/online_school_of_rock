@@ -57,7 +57,7 @@ Teachers already know this, and place students in targeted, differentiated instr
 Teachers also know that "this is not in the Zone of my Proximal Development" is not usually what students realistically say when judging their own learning performance. Instead, the realization may sound like "this is too hard" or "this is too easy". So, we matched the sentiment of video comments with the popular NLP library, <a href="http://www2.imm.dtu.dk/pubdb/edoc/imm6006.pdf" target = "_blank">AFINN</a>, which assigns words on a -5 to 5 scale, with 4 being the most positive comments, and -4 being the most negative.
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, plot.width=400}
 load("comments_small.Rdata")
 load("unnested_small.Rdata")
 library(tidyverse)
@@ -139,7 +139,7 @@ p1 <- ggplot(data = super_both_comment_level_hard, aes(x=factor_sentiment,
   xlab("Sentiment Score" ) +
   ylab("Comment Length") +
   scale_x_discrete(limits = c(-1,-2,-3,-4,1,2,3, 0, 4)) +
-  labs(caption = "Distribution of comments by length, measured in number of words, and sentiment score, from -5 as the lowest sentiment, to +5 is the highest.")
+  labs(caption = "Distribution of student comments by length and sentiment grouping")
 p1
 
 ```
