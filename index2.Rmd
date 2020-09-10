@@ -1,0 +1,47 @@
+---
+title: "Online School of Rock"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+## Anger
+
+These are the top anger words used in the videos
+
+
+</style>
+<body>
+<p> clik </p>
+<div id = "wrapper_bar">
+
+</div>
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(r2d3)
+library(tidyverse)
+library(jsonlite)
+r2d3(data = read.csv("anger_small.csv"), d3_version = 4, script = "graph2.js")
+
+```
+
+
+We want to add some way to click on the words and see the comments...
+
+When you click on "shit", then it runs this function...
+
+</style>
+<body>
+<p> clik </p>
+<div id = "wrapper_bar2">
+
+</div>
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(r2d3)
+library(tidyverse)
+library(jsonlite)
+r2d3(data = read.csv("hurt_text.csv"), d3_version = 4, script = "graph3.js")
+
+```
+

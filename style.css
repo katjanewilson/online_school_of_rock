@@ -1,0 +1,15 @@
+/* Whole document: */
+body{
+  font-family: Georgia;
+  font-size: 12pt;
+}
+h1{
+  font-family: Georgia;
+  font-size: 30pt;
+  font-weight: bold;
+}
+h2{
+  font-family: Georgia;
+  font-size: 18pt;
+  font-weight: bold;
+}
