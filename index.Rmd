@@ -21,7 +21,6 @@ p.caption {
 
 
 <h1>The (online) School of Rock</h1>
-<h2>The virtual communities that shape our future Joan Jetts and Eric Claptons </h2>
 
 By Katherine Wilson
 
@@ -222,7 +221,7 @@ In his book, <a href="https://books.google.com/books/about/The_One_World_Schoolh
 <i>“Can you imagine if someone told Einstein, Okay, wrap up this relativity thing, we’re moving on to European history? Or said to Michelangelo, Time’s up for the ceiling, now go paint the walls. Yet versions of this snuffing out of creativity and boundary-stretching thought happen all the time in conventional schools.”</i>
 
 
-```{r, out.width=600, echo=F, fig.cap= "Google Trend search for 'learn guitar' peak every year over the holiday season. This March, the search nearly reached its holiday level from a few months before."}
+```{r, out.width=600, echo=F, fig.cap= "Google Trend search for 'learn guitar' peaks every year over the holiday season. This March, the search reached and retained its holiday level from a few months before."}
 knitr::include_graphics("images/learn.png")
 ```
 
@@ -234,6 +233,6 @@ Of course, just like a live stream concert will never replace an in person exper
 
 <h2>Note to reader</h2>
 
-This is a draft of a pitch for a data journalism essay to FiveThirtyEight. If the piece were to be accepted, I would increase the number of videos, and share code/data with FiveThirtyEight.
+This is a draft of a pitch for a data journalism essay to FiveThirtyEight. If the piece were to be accepted, I would increase the number of videos, edit the narrative, and share code/data with FiveThirtyEight.
 
-I am a PhD student in Quant Methods at Penn, and play guitar in a band on the side!
+About me: I am second year PhD student in Quantitative Methods at Penn, and play guitar in a band on the side. Happy to share my portfolio of other data visualization essays with you, such as one I am working on with The Pudding at the moment.
